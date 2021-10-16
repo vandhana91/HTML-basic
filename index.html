@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        #main-heading{
+            text-align: center;
+           color:black
+    }
+    p{
+        text-align: left;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-weight: bold;
+    }
+    input[type=text] {
+  display: inline-block;
+  width: 6em;
+  position: relative;
+  top: -3em;
+  border:none;
+  border-bottom:2px solid black;
+}
+
+label {
+  display: inline-block;
+  width: 6em;
+  margin-right: .5em;
+  padding-top: 1.5em;
+}
+div.horizontal{
+        display: inline-block;
+        vertical-align: top;
+}
+.border{
+    width:400px;
+    height:400px;
+    padding:20px;
+    border:10px ridge black;
+}
+.contact{
+    width:400px;
+    height:450px;
+    border:5px solid black;
+}
+
+
+
+</style>
+    <script src='script.js'>
+    //window.alert( 'I’m JavaScript!');
+    </script>
+
+    
+   </head>
+   <body>
+ <caption><b>contact us form with all fields as required</b></caption>  
+<form >
+<div class="contact">
+    <h2 style="background-color:black;color:white">Contact Us</h2>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="phone">Phone:</label><br>
+  <input type="text" id="phone" name="phone" value=""><br>
+   <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">Salaried</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">Own Business</label><br><br>  
+  <input style="background-color:green;font-weight: bold;" type="submit" value="Submit">
+  </div>
+</form> 
+    <hr>
+<caption><b>Using list the information has been displayed</b></caption> 
+    <ul>
+    <li>Programming Language </li>
+        <ul>
+            <li>Javascript </li>
+                <ol type="a">
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ol>
+            <li>Python </li>
+                <ol type="a">
+                    <li>Django Framework</li>
+                    <li>Flask Framework</li>
+                </ol>
+            <li>Java </li> 
+                <ol type="a">
+                    <li>Spring</li>
+                    <li>Maven</li>
+                    <li>Hibernate</li>
+                </ol>
+        </ul>
+    <li>Database </li>
+        <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Cansandra</li>
+        </ul>
+
+    </ul>
+    <hr>
+    <caption><b>Href tag being used to open google in new tab</b></caption> <br>
+        <a href="https://google.com" target="_blank">Google</a>
+    <hr>
+    <caption><b>Form has been designed as shown<a href=http://evc-cit.info/cit040/formguide/card_0.png>form link</a></b></caption> 
+    <form>
+    <div class="border">
+        <h2 style="background-color:red;color:white">Yes!I want to subscribe to Mag-O-Zine</h2>
+        <label>First Name<input type="text" id="fname" name="fname"></label>
+        <label>Last Name<input type="text" id="lname" name="lname"></label>
+        <br>
+        <label>Address<input type="text" id="address" name="address"></label>
+        <br>
+        <label>City<input type="text" id="city" name="city"></label>
+        <label>State<input type="text" id="state" name="state"></label>
+        <label>Zip<input type="text" id="zip" name="zip"></label>
+        <b>
+        <div class="horizontal"><label for="" >Subscribe for:</label>
+        <input type = "checkbox" name = "maths" value = "on"> 1 Year($19.95)
+         <input type = "checkbox" name = "physics" value = "on"> 2 Year($35.00)
+         </div>
+    
+    <legend>Send me more information about:</legend>
+    
+    <div>
+        <input type="checkbox" />Computer-Zine
+        
+    </div>
+    <div>
+        <input type="checkbox" />Fishing-Zine
+    </div>
+    <div>
+        <input type="checkbox" />Cat-O-Zine
+    </div>
+    </b>
+</div>
+</form>
+
+   <hr>
+<caption><b>Using table tag the information has been dispalyed</b></caption>
+<table cellspacing="8" cellpadding="5">
+        <caption>Health Chart</caption>
+        <tr>
+            <th rowspan="2">State of Health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Eating</th>
+         </tr>
+         <tr>
+            <td >Minimum</td>
+            <td >Maximum</td>
+            <td>2 hours after eating</td>
+         </tr>
+         <tr>
+            <th>Healthy</th>
+            <th>70 </th>
+            <th>100</th>
+            <th>Less than 140</th>
+        </tr>
+        <tr>
+            <th>Pre-Diabetes</th>
+            <th>101</th>
+            <th>126</th>
+            <th>140 to 200</th>
+        </tr>
+        <tr>
+            <th>Diabetes</th>
+            <th>More than 126</th>
+            <th>N/A</th>
+            <th>More than 200</th>
+        </tr>
+    <ul>
+    </table>
+    <hr>
+
+    <ul>
+    <caption><i>using the list and bold tag information is displayed</i></caption>
+  <li><b>HTML & CSS is awesome</b></li>
+  </ul>
+  <hr>
+<caption><b>pizza order form designed with all input elements</b></caption>
+  <form method="post"
+      enctype="application/x-www-form-urlencoded"
+      action="https://pizza.example.com/order.cgi">
+      <h2 style="background-color:green;color:white">Order Pizza Online</h2>
+ <p><label>Customer name: <input name="custname" required autocomplete="shipping name"></label></p>
+ <p><label>Telephone: <input type=tel name="custtel" autocomplete="shipping tel"></label></p>
+ <p><label>Buzzer code: <input name="custbuzz" inputmode="numeric"></label></p>
+ <p><label>Email address: <input type=email name="custemail" autocomplete="shipping email"></label></p>
+ <fieldset>
+  <legend> Pizza Size </legend>
+  <p><label> <input type=radio name=size required value="small"> Small </label></p>
+  <p><label> <input type=radio name=size required value="medium"> Medium </label></p>
+  <p><label> <input type=radio name=size required value="large"> Large </label></p>
+ </fieldset>
+ <fieldset>
+  <legend> Pizza Toppings </legend>
+  <p><label> <input type=checkbox name="topping" value="bacon"> Bacon </label></p>
+  <p><label> <input type=checkbox name="topping" value="cheese"> Extra Cheese </label></p>
+  <p><label> <input type=checkbox name="topping" value="onion"> Onion </label></p>
+  <p><label> <input type=checkbox name="topping" value="mushroom"> Mushroom </label></p>
+ </fieldset>
+ <p><label>Preferred delivery time: <input type=time min="11:00" max="21:00" step="900" name="delivery" required></label></p>
+ <p><label>Delivery instructions: <textarea name="comments" maxlength=1000></textarea></label></p>
+ <p><button>Submit order</button></p>
+</form>
+
+</body>
+
+
+</html>
+
+<!-- the css selectors are inside the style tag -->
